@@ -1,0 +1,201 @@
+.game-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+button {
+    padding: 10px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.game {
+    text-align: center;
+}
+
+
+
+.game-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+background-image: linear-gradient(to right, rgb(38, 0, 255), rgb(0, 255, 68));
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.game-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.game-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.game-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-button:hover {
+    background-color: #0056b3;
+}
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+.game-box {
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    animation: rotate 4s linear infinite;
+}
+.game-box.green {
+    background-color: green;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+  .game-box.green:active{
+    border: 2px solid rgb(165, 243, 48);
+  }
+  .game{
+    background-color:rgb(2, 2, 81);
+    color:rgb(50, 9, 199);
+}
+
+.game {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+  
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    
+    .game {
+        max-width: 90%;
+     
+    }
+
+    .game-box {
+        width: 90px;
+      
+        height: 90px;
+    }
+}
+.player,.time,.score{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+background-image: repeating-conic-gradient(rgb(225, 245, 11) 10%, rgb(6, 247, 82) 20%);
+    border-radius: 50%;
+}
+.light{
+    color: white;
+}
+
+.leaderboard {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: darkgreen;
+   
+}
+
+.leaderboard h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.leaderboard ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard-entry {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .leaderboard {
+        padding: 10px;
+    }
+
+    .leaderboard h2 {
+        font-size: 20px;
+    }
+
+    .leaderboard-entry {
+        font-size: 14px;
+    }
+}
